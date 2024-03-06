@@ -1,10 +1,5 @@
 ---
-title: 'Lead Frontend Engineer - Ericsson Digital Transformation'
-roles:
-  [
-    { role: 'Frontend Engineer', period: '2019/11 - 2021/01' },
-    { role: 'Lead Frontend Engineer', period: '2021/01 - 2023/01' },
-  ]
+title: 'Lead Frontend Engineer - Digital Transformation'
 company: 'Ericsson'
 period: '2019/11 - 2023/01'
 stack:

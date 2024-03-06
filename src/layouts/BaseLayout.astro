@@ -9,7 +9,7 @@ interface Props {
 const { pageTitle } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -24,7 +24,7 @@ const { pageTitle } = Astro.props;
           <li class="group border-x border-x-zinc-800 min-w-40 text-center">
             <a
               href="/"
-              class="block p-4 font-mono text-sm group-hover:bg-zinc-900"
+              class="cursor-pointer block p-4 font-mono text-sm group-hover:bg-zinc-900"
             >
               Home
             </a>
@@ -32,7 +32,7 @@ const { pageTitle } = Astro.props;
           <li class="group border-x border-x-zinc-800 min-w-40 text-center">
             <a
               href="/projects"
-              class="block p-4 font-mono text-sm group-hover:bg-zinc-900"
+              class="cursor-pointer block p-4 font-mono text-sm group-hover:bg-zinc-900"
             >
               Career
             </a>
@@ -40,7 +40,7 @@ const { pageTitle } = Astro.props;
           <li class="group border-x border-x-zinc-800 min-w-40 text-center">
             <a
               href="/about"
-              class="block p-4 font-mono text-sm group-hover:bg-zinc-900"
+              class="cursor-pointer block p-4 font-mono text-sm group-hover:bg-zinc-900"
             >
               About me
             </a>

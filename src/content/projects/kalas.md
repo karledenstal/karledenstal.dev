@@ -1,6 +1,5 @@
 ---
 title: 'Backend Developer - Event Platform'
-roles: [{ role: 'Backend Developer', period: '2024/02 - Now' }]
 company: 'Kalas'
 period: '2024/02 - Now'
 stack:
