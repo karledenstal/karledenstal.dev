@@ -1,8 +1,8 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import PageHeader from '../../components/PageHeader.astro';
-import Subtitle from '../../components/Subtitle.astro';
-import { List } from '../../components/table/Table';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHeader from '@/components/PageHeader.astro';
+import Subtitle from '@/components/Subtitle.astro';
+import { List } from '@/components/table/Table';
 import { getCollection } from 'astro:content';
 
 const projects = await getCollection('projects');
@@ -26,6 +26,6 @@ const data = projects.map(({ data, slug }) => {
     <PageHeader headline="Projects">
       <Subtitle text="Explore projects I've worked on during my career." />
     </PageHeader>
-    <List client:load data={data} />
+    <List data={data} client:load />
   </main>
 </BaseLayout>

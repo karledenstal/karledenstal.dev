@@ -1,26 +1,9 @@
 import { tech } from '@/tech';
 import { TableCell, TableRow } from '../ui/table';
 import type { ProjectWithSlug } from './Table';
-import { HoverCardContent, HoverCardTrigger } from '../ui/hover-card';
-import { HoverCard } from '@radix-ui/react-hover-card';
+import { HoverCard, HoverCardContent, HoverCardTrigger } from '../ui/hover-card';
 import { format } from 'date-fns/format';
-
-const StackLabel = ({
-  label,
-  bg,
-  text,
-}: {
-  label: string;
-  bg: string;
-  text: string;
-}) => (
-  <span
-    className="font-mono text-xs rounded-sm px-2 py-1 transition-all delay-75 hover:brightness-105 hover:scale-105"
-    style={{ backgroundColor: bg, color: text }}
-  >
-    {label}
-  </span>
-);
+import { StackLabel } from '../StackLabel';
 
 export const Row = ({
   title,
