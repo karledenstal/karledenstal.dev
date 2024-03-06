@@ -31,7 +31,7 @@ export const Row = ({
           <StackLabel key={label} label={label} bg={bg} text={text} />
         ))}
         {remaining.length > 0 && (
-          <HoverCard>
+          <HoverCard openDelay={0}>
             <HoverCardTrigger className="font-mono text-xs rounded-sm px-2 py-1 transition-all delay-75 hover:brightness-105 hover:scale-105">
               +{remaining.length}
             </HoverCardTrigger>
