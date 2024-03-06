@@ -1,16 +1,50 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { tech } from '../tech';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout pageTitle="Home">
+  <main class="w-screen h-[90vh] grid place-items-center">
+    <div class="text-center max-w-[550px]">
+      <h1 class="text-4xl font-bold mb-4">Hi 👋</h1>
+      <div class="text-zinc-500">
+        <p>
+          My name is <span
+            class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-200 to-indigo-300"
+            >Karl</span
+          > and I'm a fullstack developer with 6 years of experience. I'm passionate
+          about all things development, but I'm a sucker for all things <span
+            class="text-[#3178c6]">Typescript</span
+          >. I love structure, documentation, stability and performance.
+        </p>
+      </div>
+      <div class="flex flex-col gap-4 mt-8">
+        <p>
+          <a
+            href="/projects"
+            class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-200 to-indigo-300"
+          >
+            Browse
+          </a> projects, or click on the tags below 👇 to filter by <span
+            class="font-mono"
+          >
+            technology.
+          </span>
+        </p>
+        <div class="flex gap-2 justify-center items-center flex-wrap">
+          {
+            tech.map(({ label, value, bg, text }) => (
+              <a
+                href={`/projects?tech=${value}`}
+                class='font-mono text-xs rounded-sm px-2 py-1 transition-all delay-75 hover:brightness-105 hover:scale-105'
+                style={`background-color: ${bg}; color: ${text};`}}
+              >
+                {label}
+              </a>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

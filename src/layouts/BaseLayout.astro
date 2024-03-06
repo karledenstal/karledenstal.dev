@@ -1,0 +1,183 @@
+---
+import { Github, Linkedin, Mail } from 'lucide-astro';
+import '@fontsource/space-mono';
+
+interface Props {
+  pageTitle: string;
+}
+
+const { pageTitle } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle} - karledenstal.dev</title>
+  </head>
+  <body class="bg-zinc-950 text-zinc-100 font-euclid">
+    <nav class="w-full border-b border-b-zinc-800">
+      <div class="w-full max-w-7xl mx-auto flex justify-between items-center">
+        <ul class="flex">
+          <li class="group border-x border-x-zinc-800 min-w-40 text-center">
+            <a
+              href="/"
+              class="block p-4 font-mono text-sm group-hover:bg-zinc-900"
+            >
+              Home
+            </a>
+          </li>
+          <li class="group border-x border-x-zinc-800 min-w-40 text-center">
+            <a
+              href="/projects"
+              class="block p-4 font-mono text-sm group-hover:bg-zinc-900"
+            >
+              Career
+            </a>
+          </li>
+          <li class="group border-x border-x-zinc-800 min-w-40 text-center">
+            <a
+              href="/about"
+              class="block p-4 font-mono text-sm group-hover:bg-zinc-900"
+            >
+              About me
+            </a>
+          </li>
+        </ul>
+        <ul class="flex gap-2 items-center">
+          <li>
+            <a
+              href="https://github.com/karledenstal"
+              target="_blank"
+              class="w-7 h-7 grid place-items-center rounded-md bg-transparent hover:bg-zinc-800"
+            >
+              <Github class="w-5" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/karl-edenst%C3%A5l-63ba94180/"
+              target="_blank"
+              class="w-7 h-7 grid place-items-center rounded-md bg-transparent hover:bg-zinc-800"
+            >
+              <Linkedin class="w-5" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:karl.edenstal@gmail.com"
+              class="w-7 h-7 grid place-items-center rounded-md bg-transparent hover:bg-zinc-800"
+            >
+              <Mail class="w-5" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  @font-face {
+    font-family: 'Euclid';
+    font-weight: 300;
+    font-style: normal;
+    src:
+      local(''),
+      url('/fonts/euclid/euclid_light.woff2') format('woff2');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Euclid';
+    font-weight: 300;
+    font-style: italic;
+    src:
+      local(''),
+      url('/fonts/euclid/euclid_light_italic.woff2') format('woff2');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Euclid';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src:
+      local(''),
+      url('/fonts/euclid/euclid_regular.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Euclid';
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+    src:
+      local(''),
+      url('/fonts/euclid/euclid_italic.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Euclid';
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src:
+      local(''),
+      url('/fonts/euclid/euclid_medium.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Euclid';
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+    src:
+      local(''),
+      url('/fonts/euclid/euclid_medium_italic.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Euclid';
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src:
+      local(''),
+      url('/fonts/euclid/euclid_semibold.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Euclid';
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+    src:
+      local(''),
+      url('/fonts/euclid/euclid_semibold_italic.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Euclid';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src:
+      local(''),
+      url('/fonts/euclid/euclid_bold.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Euclid';
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+    src:
+      local(''),
+      url('/fonts/euclid/euclid_bold_italic.woff2') format('woff2');
+  }
+</style>
