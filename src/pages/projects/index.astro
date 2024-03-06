@@ -6,14 +6,23 @@ import { List } from '../../components/table/Table';
 import { getCollection } from 'astro:content';
 
 const projects = await getCollection('projects');
-const data = projects.map(({ data, slug }) => ({
-  ...data,
-  slug: slug as string,
-}));
+const data = projects.map(({ data, slug }) => {
+  const startDate = new Date(data.period.split(' - ')[0]);
+  const endDate = new Date(data.period.split(' - ')[1]);
+
+  return {
+    ...data,
+    slug: slug as string,
+    startDate: isNaN(startDate.getTime()) ? new Date() : startDate,
+    endDate: isNaN(endDate.getTime()) ? null : endDate,
+  };
+}).sort((a, b) =>
+  a.startDate > b.startDate ? -1 : 1
+);
 ---
 
 <BaseLayout pageTitle="Career & Projects">
-  <main class="py-28 w-full max-w-sm lg:max-w-5xl mx-auto">
+  <main class="py-28 w-full max-w-sm lg:max-w-7xl mx-auto">
     <PageHeader headline="Projects">
       <Subtitle text="Explore projects I've worked on during my career." />
     </PageHeader>

@@ -1,9 +1,18 @@
 import type { ProjectFrontMatter } from '@/content/config';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../ui/table';
-import { tech } from '@/tech';
+import {
+  Table,
+  TableBody,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '../ui/table';
 import { Row } from './Row';
 
-export type ProjectWithSlug = ProjectFrontMatter & { slug: string };
+export type ProjectWithSlug = ProjectFrontMatter & {
+  slug: string;
+  startDate: Date;
+  endDate: Date | null;
+};
 
 interface TableProps {
   data: ProjectWithSlug[];
@@ -16,7 +25,8 @@ export const List = ({ data }: TableProps) => {
         <TableRow>
           <TableHead>Role + Project</TableHead>
           <TableHead>Company</TableHead>
-          <TableHead>Period</TableHead>
+          <TableHead>Start Date</TableHead>
+          <TableHead>End Date</TableHead>
           <TableHead>Stack</TableHead>
         </TableRow>
       </TableHeader>
