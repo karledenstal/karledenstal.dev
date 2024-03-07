@@ -22,7 +22,6 @@ export async function getStaticPaths() {
     const filteredProjects = allProjects
       .filter(({ data }) => {
         const stack = data.stack.map((t: string) => slugify(t, { lower: true }));
-        console.log('stack', stack);
         return stack.includes(tag);
       })
       .map(({ data, slug }) => {
