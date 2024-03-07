@@ -4,6 +4,7 @@ company: 'Dentech'
 period: '2023/01 - 2024/02'
 stack:
   [
+    'Javascript',
     'React',
     'Frontity',
     'Golang',
@@ -22,6 +23,8 @@ stack:
     'Typescript',
     'Docker',
     'Webflow Devlink',
+    'Tailwind CSS',
+    'GraphQL',
   ]
 ---
 

@@ -4,12 +4,12 @@ company: 'Ericsson'
 period: '2019/11 - 2023/01'
 stack:
   [
+    'Javascript',
     'React',
     'Redux',
     'Typescript',
     'Azure',
     'Jest',
-    'CD/CI',
     'DevOps',
     'Ericsson Design System',
     'Scrum',

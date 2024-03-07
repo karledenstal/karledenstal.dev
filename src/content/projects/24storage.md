@@ -4,6 +4,7 @@ company: '24Storage'
 period: '2017/09 - 2019/01'
 stack:
   [
+    'Javascript',
     'React',
     'Redux',
     'Sass',

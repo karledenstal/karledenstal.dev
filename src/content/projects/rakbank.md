@@ -4,6 +4,7 @@ company: 'RAKBANK'
 period: '2019/01 - 2019/08'
 stack:
   [
+    'Javascript',
     'React Native',
     'React Native Navigation',
     'Docker',

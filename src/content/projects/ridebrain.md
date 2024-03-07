@@ -4,6 +4,7 @@ company: 'Ridebrain'
 period: '2019/08 - 2019/11'
 stack:
   [
+    'Javascript',
     'React',
     'Next.js',
     'Node',

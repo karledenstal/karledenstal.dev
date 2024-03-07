@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { tech } from '@/tech';
+import slugify from 'slugify'
 ---
 
 <BaseLayout pageTitle="Home">
@@ -33,9 +34,9 @@ import { tech } from '@/tech';
         </p>
         <div class="flex gap-2 justify-center items-center flex-wrap">
           {
-            tech.map(({ label, value, bg, text }) => (
+            tech.map(({ label, bg, text }) => (
               <a
-                href={`/projects?tech=${value}`}
+                href={`/tags/${slugify(label, { lower: true })}`}
                 class='font-mono text-xs rounded-sm px-2 py-1 transition-all delay-75 hover:brightness-105 hover:scale-105'
                 style={`background-color: ${bg}; color: ${text};`}}
               >

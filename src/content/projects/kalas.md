@@ -1,9 +1,11 @@
 ---
-title: 'Backend Developer - Event Platform'
+title: 'Fullstack Developer - Event Platform'
 company: 'Kalas'
 period: '2024/02 - Now'
 stack:
   [
+    'Javascript',
+    'Astro',
     'Elysia',
     'Bun',
     'Node',
@@ -12,6 +14,7 @@ stack:
     'Typescript',
     'Lucia Auth',
     'Amazon RDS',
+    'AWS',
     'SQL',
     'npm',
     'OAuth2',
@@ -19,6 +22,7 @@ stack:
     'Docker',
     'Terraform',
     'Terraform Cloud',
+    'Tailwind CSS',
   ]
 ---
 

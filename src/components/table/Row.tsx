@@ -60,7 +60,7 @@ export const Row = ({
         {endDate == null ? 'Current' : format(endDate.toString(), 'yyyy/MM')}
       </TableCell>
       <TableCell>
-        <div className="flex gap-2 max-w-72">{constructStack()}</div>
+        <div className="flex gap-2 max-w-96">{constructStack()}</div>
       </TableCell>
     </TableRow>
   );
