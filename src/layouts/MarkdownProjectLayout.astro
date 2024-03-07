@@ -13,7 +13,7 @@ const { frontmatter } = Astro.props;
 
 <BaseLayout pageTitle={frontmatter.title}>
   <main class="py-28 w-full max-w-sm lg:max-w-5xl mx-auto">
-    <PageHeader headline="Projects">
+    <PageHeader headline={frontmatter.title}>
       <Subtitle text={frontmatter.company} />
       <Subtitle text={frontmatter.period} />
     </PageHeader>

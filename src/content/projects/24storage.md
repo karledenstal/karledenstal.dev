@@ -30,3 +30,5 @@ At 24Storage, Google Analytics and Google Tag Manager were also used to collect 
 The site was built from scratch in React with the help of Redux, and the site's content was delivered through a headless CMS, Prismic. Karl was primarily responsible for content management and building the site around it to provide a good overall experience.
 
 For a long period, Karl acted as the lead developer on the project, responsible for communication with designers and management to best turn the fundamental vision into reality. He has also been highly involved in driving 24Storage towards a more modern technical stance.
+
+_24Storage has since been merged with Green Storage._

@@ -32,7 +32,7 @@ export const Row = ({
         ))}
         {remaining.length > 0 && (
           <HoverCard openDelay={0}>
-            <HoverCardTrigger className="font-mono text-xs rounded-sm px-2 py-1 transition-all delay-75 hover:brightness-105 hover:scale-105">
+            <HoverCardTrigger className="font-mono text-xs rounded-sm px-2 py-1">
               +{remaining.length}
             </HoverCardTrigger>
             <HoverCardContent className="flex gap-2 flex-wrap">
