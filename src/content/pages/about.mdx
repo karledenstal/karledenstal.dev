@@ -1,0 +1,30 @@
+---
+title: About me
+---
+
+import { Image } from 'astro:assets';
+import About1 from '@/assets/images/about1.png';
+import About2 from '@/assets/images/about2.png';
+import About3 from '@/assets/images/about3.png';
+
+export const yoe = 6;
+
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-2">
+  <Image src={About1} alt="Me" />
+  <Image className="hidden lg:block" src={About2} alt="Me" />
+  <Image className="hidden lg:block" src={About3} alt="Me" />
+</div>
+
+🪄 _In 2006, an iconic swedish Harry Potter community under the name hogwarts.nu shut its doors. A young Karl, who frequented the site, was distraught and made a life-altering decision - to restore his favorite website. And a new passion and interest took form in programming. Today, he's a web and app developer with the same passion and dedication as the day he started._
+
+My name is <span class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-red-600">Karl Edenstål</span> and I'm a web and app developer with {yoe} years of experience. I found an interest in the field as a teenager, and it has stuck with me ever since, being my biggest hobby and passion. At the time when I started, I didn't realize this was something you could do for a living.
+
+In <span class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-red-600">2016</span>, I decided to take a shot at making a living out of it, by applying to Medieinstitutet in Stockholm, where I studied Web Development within E-Commerce. This program focused on backend development, using MySQL and PHP as the cornerstone of the education.
+
+I landed my first job at <span class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-red-600">Rhyme STHLM</span>, and I've been there since, working as a fullstack developer and a consultant. During my time here, I've worked with all different sorts of projects, clients and technologies, which has given me a broad and deep understanding of the field.
+
+Having been involved with so many different teams, start ups and enterprises, I've become an adaptable, humble and responsive developer.
+
+If you want to know more about me or my work experience, feel free to check out my socials in the top right corner. I'm always happy to talk about tech, and hearing about new opportunities arising. 
+
+Thank you for checking out my space on the internet! 🚀

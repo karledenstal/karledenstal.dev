@@ -7,6 +7,12 @@ const projectsSchema = z.object({
   stack: z.array(z.string()),
 });
 
+const pagesSchema = z.object({
+  title: z.string(),
+});
+
+export type PageFrontMatter = z.infer<typeof pagesSchema>;
+
 export type ProjectFrontMatter = z.infer<typeof projectsSchema>;
 
 const projectsCollections = defineCollection({
@@ -14,6 +20,12 @@ const projectsCollections = defineCollection({
   schema: projectsSchema,
 });
 
+const pagesCollections = defineCollection({
+  type: 'content',
+  schema: pagesSchema,
+});
+
 export const collections = {
   projects: projectsCollections,
+  pages: pagesCollections,
 };

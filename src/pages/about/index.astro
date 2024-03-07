@@ -1,7 +1,16 @@
 ---
-import BaseLayout from '@/layouts/BaseLayout.astro';
+import MarkdownPageLayout from '@/layouts/MarkdownPageLayout.astro';
+import { getEntry } from 'astro:content'
+import { Image } from 'astro:assets';
+import About1 from '@/assets/images/about1.png';
+import About2 from '@/assets/images/about2.png';
+import About3 from '@/assets/images/about3.png';
+
+const about = await getEntry('pages', 'about')
+console.log('about', about)
+const { Content } = await about.render()
 ---
 
-<BaseLayout pageTitle="About me">
-  hej
-</BaseLayout>
+<MarkdownPageLayout frontmatter={about.data}>
+  <Content />
+</MarkdownPageLayout>
