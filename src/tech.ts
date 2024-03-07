@@ -138,4 +138,22 @@ export const tech: Tech[] = [
     bg: '#E10098',
     text: '#fff',
   },
+  {
+    label: 'Playwright',
+    value: 'playwright',
+    bg: '#D65348',
+    text: '#fff',
+  },
+  {
+    label: 'Jest',
+    value: 'jest',
+    bg: '#15C213',
+    text: '#fff',
+  },
+  {
+    label: 'React Testing Library',
+    value: 'react-testing-library',
+    bg: '#FD4545',
+    text: '#fff',
+  },
 ];

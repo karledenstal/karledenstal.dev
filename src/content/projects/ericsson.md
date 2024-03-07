@@ -16,6 +16,8 @@ stack:
     'GraphQL',
     'REST',
     'Styled Components',
+    'Jest',
+    'React Testing Library',
     'LESS',
     'SASS',
   ]

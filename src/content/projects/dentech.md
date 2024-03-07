@@ -18,7 +18,7 @@ stack:
     'Next.js',
     'Playwright',
     'Jest',
-    'Vitest',
+    'React Testing Library',
     'Typescript',
     'Docker',
     'Webflow Devlink',
