@@ -1,0 +1,23 @@
+---
+import PageHeader from '@/components/PageHeader.astro';
+import BaseLayout from './BaseLayout.astro';
+import type { PostFrontMatter } from '@/content/config';
+import Subtitle from '@/components/Subtitle.astro';
+
+type Props = {
+  frontmatter: PostFrontMatter;
+};
+
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout pageTitle={frontmatter.title}>
+  <main class="py-28 w-full max-w-sm lg:max-w-5xl mx-auto">
+    <PageHeader headline={frontmatter.title}>
+      <Subtitle text={frontmatter.createdAt.toDateString()} />
+    </PageHeader>
+    <div class="lg:prose-xl prose-sm prose-zinc text-justify">
+      <slot />
+    </div>
+  </main>
+</BaseLayout>

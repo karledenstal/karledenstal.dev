@@ -13,8 +13,8 @@ const pagesSchema = z.object({
 
 const postsSchema = z.object({
   title: z.string(),
-  createdAt: z.string(),
-  editedAt: z.string().optional(),
+  createdAt: z.date(),
+  editedAt: z.date().optional(),
   tags: z.array(z.string()),
 });
 

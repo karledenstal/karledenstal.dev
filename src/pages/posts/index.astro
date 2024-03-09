@@ -1,0 +1,54 @@
+---
+import PageHeader from '@/components/PageHeader.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { tech } from '@/tech';
+import { getCollection } from 'astro:content';
+import slugify from 'slugify';
+
+const entries = await getCollection("posts");
+---
+
+<BaseLayout pageTitle="Blog">
+  <main class="py-28 w-full max-w-sm lg:max-w-7xl mx-auto">
+    <PageHeader headline="Blog" />
+    <div class="max-w-2xl flex items-center gap-2 flex-wrap -mt-8">
+      {
+        tech.map(({ label, bg, text }) => (
+        <a
+          href={`/tags/${slugify(label, { lower: true })}`}
+          class='font-mono text-xs rounded-sm px-2 py-1 transition-all delay-75 hover:brightness-105 hover:scale-105'
+          style={`background-color: ${bg}; color: ${text};`}}
+        >
+          {label}
+        </a>
+        ))
+      }
+    </div>
+    <div class="mt-24 flex flex-col space-y-24">
+    {entries.map((entry) => {
+      return (
+        <div>
+          <div class="flex flex-col space-y-2 mb-4">
+            <h2 class="text-4xl">
+              <a href={`/posts/${slugify(entry.data.title, { lower: true })}`}>{entry.data.title}</a>
+            </h2>
+            <span class="text-zinc-500">{entry.data.createdAt.toDateString()}</span>
+            <div class="flex gap-2 flex-wrap">
+              {entry.data.tags.map((tag) => (
+                <a
+                  href={`/tags/${slugify(tag, { lower: true })}`}
+                  class='font-mono block text-xs rounded-sm px-2 py-1 transition-all delay-75 hover:brightness-105 hover:scale-105'
+                  style={`background-color: ${tech.find((t) => slugify(t.label, { lower: true }) === tag.toLowerCase())!.bg}; color: ${tech.find((t) => slugify(t.label, { lower: true }) === tag.toLowerCase())!.text};`}
+                >
+                  {tag}
+                </a>
+              ))}  
+            </div>
+            <p class="prose-xl text-zinc-300">{entry.body}</p>
+          </div>
+        </div>
+      )
+    })}
+    </div>
+  </main>
+</BaseLayout>
