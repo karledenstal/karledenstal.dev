@@ -1,6 +1,6 @@
 ---
-import { Github, Linkedin, Mail } from 'lucide-astro';
 import '@fontsource/space-mono';
+import Navbar from "@/components/menu/Navbar.astro"
 
 interface Props {
   pageTitle?: string;
@@ -21,72 +21,7 @@ const title = pageTitle
     <title>{title}</title>
   </head>
   <body class="bg-zinc-950 text-zinc-100 font-euclid">
-    <nav class="w-full border-b border-b-zinc-800">
-      <div class="w-full max-w-7xl mx-auto flex justify-between items-center">
-        <ul class="flex">
-          <li class="group border-x border-x-zinc-800 min-w-40 text-center">
-            <a
-              href="/"
-              class="cursor-pointer block p-4 font-mono text-sm group-hover:bg-zinc-900"
-            >
-              Home
-            </a>
-          </li>
-          <li class="group border-x border-x-zinc-800 min-w-40 text-center">
-            <a
-              href="/projects"
-              class="cursor-pointer block p-4 font-mono text-sm group-hover:bg-zinc-900"
-            >
-              Projects
-            </a>
-          </li>
-          <!-- <li class="group border-x border-x-zinc-800 min-w-40 text-center">
-            <a
-              href="/posts"
-              class="cursor-pointer block p-4 font-mono text-sm group-hover:bg-zinc-900"
-            >
-              Blog
-            </a>
-          </li> -->
-          <li class="group border-x border-x-zinc-800 min-w-40 text-center">
-            <a
-              href="/about"
-              class="cursor-pointer block p-4 font-mono text-sm group-hover:bg-zinc-900"
-            >
-              About me
-            </a>
-          </li>
-        </ul>
-        <ul class="flex gap-2 items-center">
-          <li>
-            <a
-              href="https://github.com/karledenstal?tab=repositories"
-              target="_blank"
-              class="w-7 h-7 grid place-items-center rounded-md bg-transparent hover:bg-zinc-800"
-            >
-              <Github class="w-5" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/karl-edenst%C3%A5l-63ba94180/"
-              target="_blank"
-              class="w-7 h-7 grid place-items-center rounded-md bg-transparent hover:bg-zinc-800"
-            >
-              <Linkedin class="w-5" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="mailto:karl.edenstal@gmail.com"
-              class="w-7 h-7 grid place-items-center rounded-md bg-transparent hover:bg-zinc-800"
-            >
-              <Mail class="w-5" />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <Navbar />
     <slot />
   </body>
 </html>

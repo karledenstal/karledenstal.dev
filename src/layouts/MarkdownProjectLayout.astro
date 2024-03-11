@@ -17,7 +17,7 @@ const { frontmatter } = Astro.props;
       <Subtitle text={frontmatter.company} />
       <Subtitle text={frontmatter.period} />
     </PageHeader>
-    <div class="lg:prose-xl prose-sm prose-zinc text-justify">
+    <div class="prose-xl prose-zinc text-justify">
       <slot />
     </div>
     <div class="text-zinc-500 font-mono mt-10">

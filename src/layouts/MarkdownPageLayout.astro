@@ -10,8 +10,8 @@ const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-  <main class="py-28 w-full max-w-sm lg:max-w-5xl mx-auto">
-    <div class="lg:prose-xl prose-sm prose-zinc text-justify">
+  <main class="py-16 lg:py-28 w-full max-w-sm lg:max-w-5xl mx-auto">
+    <div class="prose-xl prose-zinc text-justify">
       <slot />
     </div>
   </main>

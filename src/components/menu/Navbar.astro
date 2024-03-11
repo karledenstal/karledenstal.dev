@@ -1,0 +1,45 @@
+---
+import { Github, Linkedin, Mail } from 'lucide-astro';
+import { MobileNav } from './MobileNav'
+import NavLink from './NavLink.astro';
+---
+
+<MobileNav client:load />
+<nav class="hidden lg:flex w-full border-b border-b-zinc-800">
+  <div class="w-full lg:max-w-5xl xl:max-w-7xl mx-auto flex justify-between items-center">
+    <ul class="flex">
+      <NavLink href="/" label="Home" />
+      <NavLink href="/projects" label="Projects" />
+      <!-- <NavLink href="/posts" label="Blog" /> -->
+      <NavLink href="/about" label="About me" />
+    </ul>
+    <ul class="flex gap-2 items-center">
+      <li>
+        <a
+          href="https://github.com/karledenstal?tab=repositories"
+          target="_blank"
+          class="w-7 h-7 grid place-items-center rounded-md bg-transparent hover:bg-zinc-800"
+        >
+          <Github class="w-5" />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/karl-edenst%C3%A5l-63ba94180/"
+          target="_blank"
+          class="w-7 h-7 grid place-items-center rounded-md bg-transparent hover:bg-zinc-800"
+        >
+          <Linkedin class="w-5" />
+        </a>
+      </li>
+      <li>
+        <a
+          href="mailto:karl.edenstal@gmail.com"
+          class="w-7 h-7 grid place-items-center rounded-md bg-transparent hover:bg-zinc-800"
+        >
+          <Mail class="w-5" />
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
