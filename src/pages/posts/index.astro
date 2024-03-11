@@ -25,7 +25,8 @@ const entries = await getCollection("posts");
       }
     </div>
     <div class="mt-24 flex flex-col space-y-24">
-    {entries.map((entry) => {
+    {entries.map(async (entry) => {
+      const { Content } = await entry.render()
       return (
         <div>
           <div class="flex flex-col space-y-2 mb-4">
@@ -44,7 +45,9 @@ const entries = await getCollection("posts");
                 </a>
               ))}  
             </div>
-            <p class="prose-xl text-zinc-300">{entry.body}</p>
+            <div class="prose-xl">
+              <Content />
+            </div>
           </div>
         </div>
       )
