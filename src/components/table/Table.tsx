@@ -24,10 +24,10 @@ export const List = ({ data }: TableProps) => {
       <TableHeader>
         <TableRow>
           <TableHead>Role + Project</TableHead>
-          <TableHead>Company</TableHead>
-          <TableHead>Start Date</TableHead>
-          <TableHead>End Date</TableHead>
-          <TableHead>Stack</TableHead>
+          <TableHead className="hidden lg:table-cell">Company</TableHead>
+          <TableHead className="hidden lg:table-cell">Start Date</TableHead>
+          <TableHead className="hidden lg:table-cell">End Date</TableHead>
+          <TableHead className="hidden lg:table-cell">Stack</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>

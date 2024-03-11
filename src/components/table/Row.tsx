@@ -1,7 +1,11 @@
 import { tech } from '@/tech';
 import { TableCell, TableRow } from '../ui/table';
 import type { ProjectWithSlug } from './Table';
-import { HoverCard, HoverCardContent, HoverCardTrigger } from '../ui/hover-card';
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from '../ui/hover-card';
 import { format } from 'date-fns/format';
 import { StackLabel } from '../StackLabel';
 
@@ -47,21 +51,28 @@ export const Row = ({
   };
 
   return (
-    <TableRow
-      onClick={() => (window.location.href = '/projects/' + slug)}
-      className="cursor-pointer"
-    >
-      <TableCell className="py-4">{title}</TableCell>
-      <TableCell>{company}</TableCell>
-      <TableCell className="font-mono">
-        {format(startDate.toString(), 'yyyy/MM')}
-      </TableCell>
-      <TableCell className="font-mono">
-        {endDate == null ? 'Current' : format(endDate.toString(), 'yyyy/MM')}
-      </TableCell>
-      <TableCell>
-        <div className="flex gap-2 max-w-96">{constructStack()}</div>
-      </TableCell>
-    </TableRow>
+    <>
+      <TableRow
+        onClick={() => (window.location.href = '/projects/' + slug)}
+        className="cursor-pointer border-b-0 lg:border-b"
+      >
+        <TableCell>{title}</TableCell>
+        <TableCell className="py-4 hidden lg:table-cell">{company}</TableCell>
+        <TableCell className="font-mono hidden lg:table-cell">
+          {format(startDate.toString(), 'yyyy/MM')}
+        </TableCell>
+        <TableCell className="font-mono hidden lg:table-cell">
+          {endDate == null ? 'Current' : format(endDate.toString(), 'yyyy/MM')}
+        </TableCell>
+        <TableCell className="hidden lg:table-cell">
+          <div className="flex gap-2 lg:max-w-96">{constructStack()}</div>
+        </TableCell>
+      </TableRow>
+      <TableRow className="table-row lg:hidden">
+        <TableCell colSpan={5} className="pb-4">
+          <div className="flex gap-2">{constructStack()}</div>
+        </TableCell>
+      </TableRow>
+    </>
   );
 };
