@@ -4,4 +4,85 @@ createdAt: 2024-03-08
 tags: ['typescript']
 ---
 
-Hejsan.
+> "Why are you using type instead of interface?"
+
+A question I hear too often amongst my colleagues. When I first started to use `type` instead of `interface`, I didn't reflect on it. Not really. I just preferred the `type` syntax, after all it was called TYPEscript. I had used `interface` when I first started to learn typescript, since it was the default choice in the code base I was working on, but it wasn't until I was getting more comfortable in Typescript that I started to reflect on the differences of the two.
+
+## What are the similarities?
+
+Before looking at the differences between the throw, let's start at their similarities.
+
+Both `type` and `interface` can be used to define an object type.
+
+```typescript
+type Person = {
+  name: string;
+  age: number;
+}
+```
+
+is the same as
+
+```typescript
+interface Person {
+  name: string;
+  age: number;
+}
+```
+
+Both are here used to define the `Person` object. There's no difference between the two in this case. 
+
+But this is where the similarities end. At this StaticRange, I'd say that it's only really down to personal preference, or up to the code base you're working on. But let's dive a little bit deeper into the differences.
+
+## What are the differences?
+
+There are only a few handful of differences between the two. We'll be looking at the major ones, like the ability to create more than just object types, and declaration merging.
+
+### Define more than just object types
+
+The main difference between `type` and `interface` is that `type` can be used to define more than just object types. It can be used to define union types, intersection types, and more. `interface` can only be used to define object types.
+
+```typescript
+type Status = 'active' | 'inactive';
+```
+
+Here we define a type that can only be either `active` or `inactive`. This is not possible with `interface`, we can not do something like this for example:
+
+```typescript
+interface Status = 'active' | 'inactive';
+```
+
+This is because the interface only defines an object type. You could, of course do this:
+
+```typescript
+interface Status {
+  status: 'active' | 'inactive';
+}
+```
+
+But then it would be an object, and you'd have to access it like `status.status` which is not what we'd want in this case.
+
+### Declaration Merging
+
+`interface` will automatically merge declarations with the same name (`namespace` & `class` also does this). This is not possible with `type`. This is a feature that can be useful in some cases, but it can also be a bit confusing. 
+
+Suppose we have a type coming in from a different library, and we want to add some properties to it. We could simply extend the type and create a new one, like this:
+
+```typescript
+interface PersonWithBirthdate extends Person {
+  birthdate: Date;
+}
+```
+
+This is valid, but if we used a component from this different library that used their own interface/type and not our `PersonWithBirthdate`, we'd get type errors. This could be a case, where we'd want to use declaration merging.
+
+```typescript
+interface Person {
+  birthdate: Date;
+}
+```
+
+This would be valid. We'd be able to use the `Person` type from the library, and add our own properties to it. This is not possible with `type`.
+
+`type` can not be overwritten or merged in any way. It can be extended, and thus creating a new typeof, but it can not be merged. 
+
