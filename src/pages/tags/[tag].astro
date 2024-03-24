@@ -1,11 +1,12 @@
 ---
 import { getCollection } from 'astro:content';
 import slugify from 'slugify';
-import MarkdownProjectLayout from '@/layouts/MarkdownProjectLayout.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import PageHeader from '@/components/PageHeader.astro';
 import Subtitle from '@/components/Subtitle.astro';
 import { List } from '@/components/table/Table';
+
+export const prerender = true
 
 export async function getStaticPaths() {
   const allProjects = await getCollection('projects');
