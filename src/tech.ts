@@ -135,4 +135,14 @@ export const tech: Tech[] = [
     bg: '#38BDF8',
     text: '#fff',
   },
+  {
+    label: 'Vue',
+    bg: '#41B883',
+    text: '#fff',
+  },
+  {
+    label: 'Nuxt',
+    bg: '#00DC82',
+    text: '#fff',
+  }
 ];

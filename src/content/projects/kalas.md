@@ -1,7 +1,7 @@
 ---
 title: 'Fullstack Developer - Event Platform'
 company: 'Kalas'
-period: '2024/02 - Now'
+period: '2024/02 - 2024/04'
 stack:
   [
     'Javascript',
