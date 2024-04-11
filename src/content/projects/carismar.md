@@ -9,6 +9,7 @@ stack:
     'Javascript',
     'CSS',
     'Sass',
+    'Git',
   ]
 ---
 
