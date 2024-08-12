@@ -1,16 +1,8 @@
 ---
 title: 'Frontend Developer - E-Commerce'
 company: 'Carismar Agency'
-period: '2024/04 - Now'
-stack:
-  [
-    'Nuxt',
-    'Vue',
-    'Javascript',
-    'CSS',
-    'Sass',
-    'Git',
-  ]
+period: '2024/04 - 2024/08'
+stack: ['Nuxt', 'Vue', 'Javascript', 'CSS', 'Sass', 'Git']
 ---
 
 Carismar Agency specializes in streamlining the process of creating and launching e-commerce websites for businesses. Leveraging the robust Ralph Storefront framework built with Nuxt 2, they seamlessly integrate with their proprietary e-commerce CMS, Geins. Geins is a user-friendly e-commerce solution designed for simplicity and efficiency, offering comprehensive features to support businesses of all sizes.
