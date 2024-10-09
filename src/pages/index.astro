@@ -2,6 +2,9 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { tech } from '@/tech';
 import slugify from 'slugify'
+
+const startYear = 2017
+const yoe = new Date().getFullYear() - startYear
 ---
 
 <BaseLayout>
@@ -12,7 +15,7 @@ import slugify from 'slugify'
         <p>
           My name is <span
             class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-200 to-indigo-300">Karl</span
-          > and I'm a fullstack developer with 6 years of experience. I'm passionate
+          > and I'm a fullstack developer with {yoe} years of experience. I'm passionate
           about development, but I'm a sucker for all things <span
             class="text-[#3178c6]">Typescript</span
           >. I love structure, documentation, stability and performance.
