@@ -144,5 +144,10 @@ export const tech: Tech[] = [
     label: 'Nuxt',
     bg: '#00DC82',
     text: '#fff',
+  },
+	{
+    label: 'ElasticSearch',
+    bg: '#34BDAF',
+    text: '#fff',
   }
 ];
