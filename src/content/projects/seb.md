@@ -2,7 +2,7 @@
 title: "Frontend Developer - Fraud Prevention"
 company: "SEB"
 period: "2024/08 - Now"
-stack: ["Next.js", "ElasticSearch", "Javascript", "Git"]
+stack: ["Next.js", "ElasticSearch", "Javascript", "Git", "Typescript", "JSDoc"]
 ---
 
 SEB is one of the largest banks in Sweden and the Nordics. It is a Swedish company that operates in finance.
