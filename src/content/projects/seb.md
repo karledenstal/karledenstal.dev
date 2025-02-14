@@ -13,4 +13,4 @@ As a frontend developer, Karls task is to maintain the platform, develop new fea
 
 The team works agile according to Scrum with daily standups, sprints, retrospectives and planning. Karl helps here by providing the necessary context and information to task from a frontend perspective. The team works closely together and Karl is one of two frontend developers on the team.
 
-Karl's main responsibilities have been to come up with and work on user-friendly solutions, build up a platform using data from internal APIs, and deliver all frontend development on the project.
+Karl's main responsibilities have been to come up with and work on user-friendly solutions, build up a platform using data from internal APIs, and deliver frontend development on the project. Karl is playing a key role in maintaining the frontend projectsd, by working on removing vulnerabilities, update versions of dependencies and make sure the frontend team works according to best practices.
