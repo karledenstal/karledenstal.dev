@@ -1,12 +1,14 @@
 ---
-import { Github, Linkedin, Mail } from 'lucide-astro';
-import { MobileNav } from './MobileNav'
-import NavLink from './NavLink.astro';
+import { Github, Linkedin, Mail } from "lucide-astro";
+import { MobileNav } from "./MobileNav";
+import NavLink from "./NavLink.astro";
 ---
 
 <MobileNav client:load />
 <nav class="hidden lg:flex w-full border-b border-b-zinc-800">
-  <div class="w-full lg:max-w-5xl xl:max-w-7xl mx-auto flex justify-between items-center">
+  <div
+    class="w-full lg:max-w-5xl xl:max-w-7xl mx-auto flex justify-between items-center"
+  >
     <ul class="flex">
       <NavLink href="/" label="Home" />
       <NavLink href="/projects" label="Projects" />
@@ -34,7 +36,7 @@ import NavLink from './NavLink.astro';
       </li>
       <li>
         <a
-          href="mailto:karl.edenstal@gmail.com"
+          href="mailto:jobs@karledenstal.dev"
           class="w-7 h-7 grid place-items-center rounded-md bg-transparent hover:bg-zinc-800"
         >
           <Mail class="w-5" />
