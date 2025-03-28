@@ -1,33 +1,33 @@
 ---
-import { getCollection } from 'astro:content';
-import slugify from 'slugify';
-import BaseLayout from '@/layouts/BaseLayout.astro';
-import PageHeader from '@/components/PageHeader.astro';
-import Subtitle from '@/components/Subtitle.astro';
-import { List } from '@/components/table/Table';
-
-export const prerender = true
+import { getCollection } from "astro:content";
+import slugify from "slugify";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import PageHeader from "@/components/PageHeader.astro";
+import Subtitle from "@/components/Subtitle.astro";
+import { List } from "@/components/table/Table";
 
 export async function getStaticPaths() {
-  const allProjects = await getCollection('projects');
+  const allProjects = await getCollection("projects");
   const uniqueTags = [
     ...new Set(
       allProjects
         .map((project) => project.data.stack)
         .flat()
-        .map((t) => slugify(t, { lower: true }))
+        .map((t) => slugify(t, { lower: true })),
     ),
   ];
 
   return uniqueTags.map((tag) => {
     const filteredProjects = allProjects
       .filter(({ data }) => {
-        const stack = data.stack.map((t: string) => slugify(t, { lower: true }));
+        const stack = data.stack.map((t: string) =>
+          slugify(t, { lower: true }),
+        );
         return stack.includes(tag);
       })
       .map(({ data, slug }) => {
-        const startDate = new Date(data.period.split(' - ')[0]);
-        const endDate = new Date(data.period.split(' - ')[1]);
+        const startDate = new Date(data.period.split(" - ")[0]);
+        const endDate = new Date(data.period.split(" - ")[1]);
 
         return {
           ...data,
