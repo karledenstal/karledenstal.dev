@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { clsx } from "clsx";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -13,7 +13,7 @@ export const MobileNav = () => {
           {
             "opacity-100 flex": isOpen,
             "opacity-0 hidden": !isOpen,
-          }
+          },
         )}
       >
         <div className="flex flex-col w-full">
