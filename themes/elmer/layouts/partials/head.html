@@ -1,0 +1,5 @@
+{{ $styles := resources.Get "css/main.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
+<script src="https://unpkg.com/@asmcss/assembler/dist/assembler.min.js"></script>
+<link rel="icon" href="/favicon.png" type="image/png">
+<title>karledenstal.dev</title>
