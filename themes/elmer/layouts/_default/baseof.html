@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     {{- partial "head.html" . -}}
-    <body>
+    <body x-style="bg:@color-zinc-950; color:@color-zinc-200">
         {{- partial "header.html" . -}}
         <div id="content">
         {{- block "main" . }}{{- end }}
