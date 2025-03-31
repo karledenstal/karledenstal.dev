@@ -1,4 +1,4 @@
 baseURL = 'https://karledenstal.dev/'
-languageCode = 'en-us'
+languageCode = 'en'
 title = 'karledenstal.dev'
 theme = 'elmer'

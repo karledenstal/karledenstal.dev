@@ -1,0 +1,24 @@
+{
+  "name": "karledenstal.dev",
+  "version": "3.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "hugo server -D",
+    "build": "hugo --minify",
+    "clean": "rm -rf public resources",
+    "build:prod": "npm run clean && hugo --gc --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karledenstal/karledenstal.dev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karledenstal/karledenstal.dev/issues"
+  },
+  "homepage": "https://github.com/karledenstal/karledenstal.dev#readme",
+  "description": ""
+}
