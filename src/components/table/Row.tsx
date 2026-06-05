@@ -19,7 +19,7 @@ export const Row = ({
 }: ProjectWithSlug) => {
   const constructStack = () => {
     const stackList = tech
-      .filter(({ label }) => stack.includes(label))
+      .filter(({ id }) => stack.includes(id))
       .map(({ label, bg, text }) => ({
         label,
         bg,

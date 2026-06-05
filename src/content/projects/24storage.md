@@ -1,23 +1,9 @@
 ---
-title: 'Frontend Developer - Web-based Self-Storage Solution'
-company: '24Storage'
-period: '2017/09 - 2019/01'
-stack:
-  [
-    'Javascript',
-    'React',
-    'Redux',
-    'Sass',
-    'Google Analytics',
-    'GTM',
-    'Prismic',
-    'WCAG',
-    'SEO',
-    'Node',
-    'MongoDB',
-    'Express',
-    'Rest API',
-  ]
+title: "Self-Storage Solution"
+company: "24Storage"
+role: "Frontend Developer"
+period: "2017/09 - 2019/01"
+stack: ["javascript", "react", "redux", "sass", "node", "mongodb", "express"]
 ---
 
 24Storage is a company that rents out storage units to both individuals and businesses through what is known as self-storage. The company was founded in 2015 with the vision to digitalize the storage industry. Rentals are made both through customer service and the company's website. Today, 24Storage has 23 facilities around the country, over 10,000 storage units, and over 6,000 customers. At the end of 2019, 24Storage was listed on the First North stock exchange. Rhyme has had a long-standing collaboration with 24Storage and was involved in developing their current website from scratch.
@@ -32,3 +18,4 @@ The site was built from scratch in React with the help of Redux, and the site's 
 For a long period, Karl acted as the lead developer on the project, responsible for communication with designers and management to best turn the fundamental vision into reality. He has also been highly involved in driving 24Storage towards a more modern technical stance.
 
 _24Storage has since been merged with Green Storage._
+

@@ -1,28 +1,19 @@
 ---
-title: 'Fullstack Developer - Event Platform'
-company: 'Kalas'
-period: '2024/02 - 2024/04'
+title: "Next-Gen Event Platform"
+company: "Kalas"
+role: "Fullstack Developer"
+period: "2024/02 - 2024/04"
 stack:
   [
-    'Javascript',
-    'Astro',
-    'Elysia',
-    'Bun',
-    'Node',
-    'Prisma',
-    'PostgreSQL',
-    'Typescript',
-    'Lucia Auth',
-    'Amazon RDS',
-    'AWS',
-    'SQL',
-    'npm',
-    'OAuth2',
-    'Swagger',
-    'Docker',
-    'Terraform',
-    'Terraform Cloud',
-    'Tailwind CSS',
+    "astro",
+    "elysia",
+    "node",
+    "prisma",
+    "postgresql",
+    "typescript",
+    "docker",
+    "terraform",
+    "tailwind",
   ]
 ---
 

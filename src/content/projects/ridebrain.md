@@ -1,18 +1,9 @@
 ---
-title: 'Frontend Developer - Hub for Extreme Sports'
-company: 'Ridebrain'
-period: '2019/08 - 2019/11'
-stack:
-  [
-    'Javascript',
-    'React',
-    'Next.js',
-    'Node',
-    'GraphQL',
-    'GraphCMS',
-    'Mongoose',
-    'MongoDB',
-  ]
+title: "Extreme Sports Community"
+company: "Ridebrain"
+role: "Frontend Developer"
+period: "2019/08 - 2019/11"
+stack: ["javascript", "react", "nextjs", "node", "graphql", "mongodb"]
 ---
 
 Ridebrain is a web and app-based hub for extreme sports created by and for skiers and snowboarders worldwide. It is a social network with user-generated and proprietary content, where leading professional riders can connect with their fans and share tips, tricks, and their favorite resorts. It's also for regular skiers and snowboarders looking to find new friends with the same interest or new cool skis to try out for the upcoming season.

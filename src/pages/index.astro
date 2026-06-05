@@ -9,23 +9,18 @@ import slugify from 'slugify'
   <main class="w-full h-screen p-4 lg:p-0 lg:w-screen lg:h-[70vh] grid place-items-center">
     <div class="text-center max-w-[550px]">
       <h1 class="text-4xl font-bold mb-4">Hi 👋</h1>
-      <div class="text-zinc-500">
+      <div class="text-zinc-400">
         <p>
-          My name is <span
-            class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-200 to-indigo-300">Karl</span
-          > and I'm a fullstack developer with {yoe} years of experience. I'm passionate
-          about development, but I'm a sucker for all things <span
-            class="text-[#3178c6]">Typescript</span
-          >. I love structure, documentation, stability and performance.
+        My name is Karl and I'm a Solutions Developer with {yoe} years of experience. I'm passionate about all things web and building apps that are intuitive, maintainable, and built to last.
         </p>
       </div>
       <div class="flex flex-col gap-4 mt-8">
         <p>
           <a
             href="/projects"
-            class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-200 to-indigo-300"
+            class="text-emerald-200"
           >
-            Browse
+            Browse ✨
           </a> projects, or click on the tags below 👇 to filter by <span
             class="font-mono"
           >
@@ -34,9 +29,9 @@ import slugify from 'slugify'
         </p>
         <div class="flex gap-2 justify-center items-center flex-wrap">
           {
-            tech.map(({ label, bg, text }) => (
+          tech.map(({ label, bg, text, id }) => (
               <a
-                href={`/tags/${slugify(label, { lower: true })}`}
+                href={`/tags/${slugify(id, { lower: true })}`}
                 class='font-mono text-xs rounded-sm px-2 py-1 transition-all delay-75 hover:brightness-105 hover:scale-105'
                 style={`background-color: ${bg}; color: ${text};`}}
               >

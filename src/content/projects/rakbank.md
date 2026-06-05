@@ -1,19 +1,9 @@
 ---
-title: 'App Developer - Banking App'
-company: 'RAKBANK'
-period: '2019/01 - 2019/08'
-stack:
-  [
-    'Javascript',
-    'React Native',
-    'React Native Navigation',
-    'Docker',
-    'Firebase',
-    'PWA',
-    'Scrum',
-    'Redux',
-    'Redux Saga',
-  ]
+title: "Mobile Banking App"
+company: "RAKBANK"
+role: "Mobile App Developer"
+period: "2019/01 - 2019/08"
+stack: ["javascript", "react-native", "docker", "redux"]
 ---
 
 Rakbank is a commercial bank based in Dubai, United Arab Emirates. The bank operates through a network of 39 branches catering to consumers, SMEs, and large corporations. Initially a dedicated corporate bank, Rakbank has, since the early 2000s, sought to establish a stronger position as a consumer bank as well.

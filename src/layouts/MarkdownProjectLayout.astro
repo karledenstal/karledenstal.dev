@@ -15,6 +15,7 @@ const { frontmatter } = Astro.props;
   <main class="py-24 px-4 lg:py-28 w-full lg:px-0 lg:max-w-5xl mx-auto">
     <PageHeader headline={frontmatter.title}>
       <Subtitle text={frontmatter.company} />
+      <Subtitle text={frontmatter.role} />
       <Subtitle text={frontmatter.period} />
     </PageHeader>
     <div class="prose-xl prose-zinc text-justify">

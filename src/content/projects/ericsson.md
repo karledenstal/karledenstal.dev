@@ -1,25 +1,17 @@
 ---
-title: 'Lead Frontend Engineer - Digital Transformation'
-company: 'Ericsson'
-period: '2019/11 - 2023/01'
+title: "Software Asset Management Platform"
+company: "Ericsson"
+role: "Lead Frontend Developer"
+period: "2019/11 - 2023/01"
 stack:
   [
-    'Javascript',
-    'React',
-    'Redux',
-    'Typescript',
-    'Azure',
-    'Jest',
-    'DevOps',
-    'Ericsson Design System',
-    'Scrum',
-    'GraphQL',
-    'REST',
-    'Styled Components',
-    'Jest',
-    'React Testing Library',
-    'LESS',
-    'SASS',
+    "react",
+    "redux",
+    "typescript",
+    "jest",
+    "graphql",
+    "react-testing-library",
+    "sass",
   ]
 ---
 
@@ -34,4 +26,3 @@ The team works agilely according to scrum with daily standups and sprints. Karl 
 Karl's main responsibilities have been to come up with and work on user-friendly solutions, build up a platform using data from internal APIs, and deliver all frontend development on the project. He has also developed and maintains an internal NPM library for the project that handles authentication and collected components for all projects within Ericsson's Digital Transformation.
 
 In 2021, Karl took on a leading role within Lighthouse 10 Software Asset Management and was responsible for all frontend parts of the project. This involved setting up structure, working methods, and processes, as well as onboarding new developers and leading the development work for the application.
-

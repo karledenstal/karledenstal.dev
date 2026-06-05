@@ -1,10 +1,12 @@
+import { technologyIds } from '@/tech';
 import { z, defineCollection } from 'astro:content';
 
 const projectsSchema = z.object({
   title: z.string(),
   company: z.string(),
   period: z.string(),
-  stack: z.array(z.string()),
+  role: z.string(),
+  stack: z.array(z.enum(technologyIds as [string, ...string[]])),
 });
 
 const pagesSchema = z.object({

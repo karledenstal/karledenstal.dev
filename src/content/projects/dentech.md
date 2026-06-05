@@ -1,30 +1,20 @@
 ---
-title: 'Lead Frontend Developer - Online Dentist Booking'
-company: 'Dentech'
-period: '2023/01 - 2024/02'
+title: "Dentist Booking Platform"
+company: "Dentech"
+role: "Lead Frontend Developer"
+period: "2023/01 - 2024/02"
 stack:
   [
-    'Javascript',
-    'React',
-    'Frontity',
-    'Golang',
-    'Google Cloud',
-    'SEO',
-    'Wordpress',
-    'MariaDB',
-    'SQL',
-    'nginx',
-    'Redux',
-    'Vite',
-    'Next.js',
-    'Playwright',
-    'Jest',
-    'React Testing Library',
-    'Typescript',
-    'Docker',
-    'Webflow Devlink',
-    'Tailwind CSS',
-    'GraphQL',
+    "react",
+    "redux",
+    "nextjs",
+    "playwright",
+    "jest",
+    "react-testing-library",
+    "typescript",
+    "docker",
+    "tailwind",
+    "graphql",
   ]
 ---
 
