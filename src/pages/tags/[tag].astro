@@ -52,8 +52,8 @@ const tagData = tech.find(tech => tech.id === tag)
 
 <BaseLayout pageTitle={tag}>
   <main class="py-28 w-full max-w-sm lg:max-w-7xl mx-auto">
-    <PageHeader headline={tagData?.label}>
-      <Subtitle text={`Projects associated with tag ${tagData?.label}`} />
+    <PageHeader headline={tagData.label}>
+      <Subtitle text={`Projects associated with tag ${tagData.label}`} />
     </PageHeader>
     <List client:load data={projects} />
   </main>
