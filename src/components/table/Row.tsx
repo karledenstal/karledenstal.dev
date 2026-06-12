@@ -6,8 +6,9 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from '../ui/hover-card';
-import { format } from 'date-fns/format';
+import { format, differenceInMonths } from 'date-fns';
 import { StackLabel } from '../StackLabel';
+import { formatDuration } from '@/lib/utils';
 
 export const Row = ({
   title,
@@ -28,6 +29,7 @@ export const Row = ({
 
     const firstFour = stackList.slice(0, 4);
     const remaining = stackList.slice(4);
+
 
     return (
       <>
@@ -50,6 +52,8 @@ export const Row = ({
     );
   };
 
+  const duration = differenceInMonths(endDate ?? new Date(), startDate)
+
   return (
     <>
       <TableRow
@@ -63,6 +67,9 @@ export const Row = ({
         </TableCell>
         <TableCell className="font-mono hidden lg:table-cell">
           {endDate == null ? 'Current' : format(endDate.toString(), 'yyyy/MM')}
+        </TableCell>
+        <TableCell className="font-mono hidden lg:table-cell">
+          {formatDuration(duration)}
         </TableCell>
         <TableCell className="hidden lg:table-cell">
           <div className="flex gap-2 lg:max-w-96">{constructStack()}</div>

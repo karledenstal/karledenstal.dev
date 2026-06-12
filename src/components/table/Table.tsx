@@ -27,6 +27,7 @@ export const List = ({ data }: TableProps) => {
           <TableHead className="hidden lg:table-cell">Company</TableHead>
           <TableHead className="hidden lg:table-cell">Start Date</TableHead>
           <TableHead className="hidden lg:table-cell">End Date</TableHead>
+          <TableHead className="hidden lg:table-cell">Duration</TableHead>
           <TableHead className="hidden lg:table-cell">Stack</TableHead>
         </TableRow>
       </TableHeader>
