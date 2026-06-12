@@ -3,7 +3,7 @@ title: "Fraud Prevention Platform"
 company: "SEB"
 role: "Solutions Developer"
 period: "2024/08 - Now"
-stack: ["nextjs", "elasticsearch", "javascript", "java", "cicd"]
+stack: ["nextjs", "elasticsearch", "javascript", "java", "cicd", "react"]
 ---
 
 SEB is one of the largest financial institutions in the Nordics. As part of the Financial Crime Prevention organization, I develop and maintain internal systems used by fraud investigators to analyze transactions, manage fraud cases, and support the recovery of funds for affected customers.
